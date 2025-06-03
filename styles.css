@@ -1,1 +1,16 @@
 /*  your css code here. If applicable */
+#container {
+    margin: 20px;
+}
+
+#container::before {
+    content: "Before Text"; /* Change this to your desired text */
+    color: #f00;
+    font-size: 20px;
+}
+
+#container::after {
+    content: "After Text"; /* Change this to your desired text */
+    color: #f00;
+    font-size: 20px;
+}
