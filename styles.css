@@ -1,16 +1,22 @@
-/*  your css code here. If applicable */
 #container {
     margin: 20px;
+    position: relative; /* Ensure positioning context for pseudo-elements */
 }
 
 #container::before {
     content: "Before Text"; /* Change this to your desired text */
-    color: #f00;
-    font-size: 20px;
+    color: #f00; /* Red color */
+    font-size: 20px; /* Font size */
+    position: absolute; /* Position it relative to the container */
+    top: -30px; /* Adjust as needed to position it correctly */
+    left: 0; /* Align to the left */
 }
 
 #container::after {
     content: "After Text"; /* Change this to your desired text */
-    color: #f00;
-    font-size: 20px;
+    color: #f00; /* Red color */
+    font-size: 20px; /* Font size */
+    position: absolute; /* Position it relative to the container */
+    bottom: -30px; /* Adjust as needed to position it correctly */
+    left: 0; /* Align to the left */
 }
